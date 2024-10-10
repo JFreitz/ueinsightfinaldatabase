@@ -1,0 +1,152 @@
+*{
+    
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+}
+body {
+    background-image: url('assets/eastinsightbg.png');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+}
+
+.container{
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    width: 450px;
+    padding: 2rem; /* Increased padding for more vertical space */
+    margin: 50px auto;
+    border-radius: 30px;
+    box-shadow: 0 20px 35px rgba(0,0,1,0.9);
+    min-height: 550px; /* Set a minimum height to make the container vertically longer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensures content is vertically centered */
+}
+
+
+form{
+    margin:0 2rem;
+}
+.form-title {
+    background-image: url('assets/eastlogo.png'); /* Add the logo image */
+    background-size: contain; /* Ensures the logo fits within the area */
+    background-position: center; /* Centers the logo horizontally */
+    background-repeat: no-repeat; /* Prevents the logo from repeating */
+    height: 150px; /* Adjust this value to control the size of the area */
+    font-size: 0; /* Set font-size to 0 to hide any text */
+    padding: 0; /* Remove padding to ensure clean placement */
+    margin-bottom: 2.5rem; /* Keep some space below the logo */
+}
+
+input{
+    color:inherit;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #757575;
+    padding-left:1.5rem;
+    font-size:15px;
+}
+.input-group{
+    padding:1% 0;
+    position:relative;
+
+}
+.input-group i{
+    position:absolute;
+    color:black;
+}
+input:focus{
+    background-color: transparent;
+    outline:transparent;
+    border-bottom:2px solid hsl(0, 100%, 45%);
+}
+input::placeholder{
+    color:transparent;
+}
+label{
+    color:#757575;
+    position:relative;
+    left:1.2em;
+    top:-1.3em;
+    cursor:auto;
+    transition:0.3s ease all;
+}
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-3em;
+    color:hsl(327,90%,28%);
+    font-size:15px;
+}
+.recover{
+    text-align:right;
+    font-size:1rem;
+    margin-bottom:1rem;
+
+}
+.recover a{
+    text-decoration:none;
+    color:rgb(4, 4, 4);
+}
+.recover a:hover{
+    color:rgb(249, 0, 0);
+    text-decoration:underline;
+}
+.btn{
+    font-size:1.1rem;
+    padding:8px 0;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    width:100%;
+    background:rgb(255, 0, 0);
+    color:white;
+    cursor:pointer;
+    transition:0.9s;
+}
+.btn:hover{
+    background:#07001f;
+}
+.or{
+    font-size:1.1rem;
+    margin-top:0.5rem;
+    text-align:center;
+}
+.icons{
+    text-align:center;
+}
+.icons i{
+    color:rgb(0, 0, 0);
+    padding:0.8rem 1.5rem;
+    border-radius:10px;
+    font-size:1.5rem;
+    cursor:pointer;
+    border:2px solid #dfe9f5;
+    margin:0 15px;
+    transition:1s;
+}
+.icons i:hover{
+    background:#edfe00cf;
+    font-size:1.6rem;
+    border:2px solid rgb(255, 0, 0);
+}
+.links{
+    display:flex;
+    justify-content:space-around;
+    padding:0 4rem;
+    margin-top:0.9rem;
+    font-weight:bold;
+}
+button{
+    color:rgb(255, 0, 0);
+    border:none;
+    background-color:transparent;
+    font-size:1rem;
+    font-weight:bold;
+}
+button:hover{
+    text-decoration:underline;
+    color:blue;
+}

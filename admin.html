@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Office</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    button {
+      padding: 20px 40px;
+      margin: 20px 0;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      width: 300px;
+      display: block;
+    }
+
+    button:hover {
+      background-color: #f44336;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Select an Office</h1>
+    
+    <button onclick="selectOffice('Office 1')">Office 1</button>
+    <button onclick="selectOffice('Office 2')">Office 2</button>
+    <button onclick="selectOffice('Office 3')">Office 3</button>
+  </div>
+
+  <script>
+    // Function to handle office selection and navigate to Page 2
+    function selectOffice(officeName) {
+      // Navigate to ratings page with selected office as a query parameter
+      window.location.href = `office1_feedback.php?office=${encodeURIComponent(officeName)}`;
+    }
+  </script>
+
+</body>
+</html>
